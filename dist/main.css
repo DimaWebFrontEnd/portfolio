@@ -692,6 +692,7 @@ nav ul .ul__li.active {
   bottom: 0;
   object-fit: cover;
   animation: pict 3s ease;
+  filter: brightness(20%);
 }
 
 @keyframes pict {
@@ -930,6 +931,8 @@ nav ul .ul__li.active {
   /* min-width: 100%; */
   width: 100%;
   max-width: 830px;
+  /* text-shadow: 1px 1px black; */
+  /* color: brown; */
 }
 @media screen and (max-width: 850px) {
   .contact {
