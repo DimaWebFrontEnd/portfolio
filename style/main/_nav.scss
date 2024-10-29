@@ -1,0 +1,188 @@
+nav {
+   position: fixed;
+   left: 200px;
+   animation: 1s ease navbar;
+   @media screen and (max-width: 1600px) {
+    font-size: 1rem;
+    left: 150px;
+   }
+   @media screen and (max-width: 1200px) {
+    display: none;
+   }
+   ul {
+      list-style-type: none;
+      line-height: 3;
+      li {
+         /* line-height: 3; */
+         /* padding: 10px; */
+         font-size: 1.2rem;
+         cursor: pointer;
+         user-select: none;
+      }
+      .ul__li.active {
+         transform: scale(1.5);
+         animation: glitch 4s steps(100) infinite;
+      }
+      @keyframes glitch {
+         
+         0% {
+            text-shadow: 1px 0 0 red, -1px 0 0 blue;
+        }
+        4% {
+            text-shadow: 1px 0 0 red, -1px 0 0 blue;
+        }
+        5% {
+            text-shadow: -1px 0 0 red, 1px 0 0 blue;
+        }
+        10% {
+            text-shadow: -1px 0 0 red, 1px 0 0 blue;
+        }
+        11% {
+            text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
+        }
+        15% {
+            text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
+        }
+        16% {
+            text-shadow: -1px 0 0 red, 1px 0 0 lime;
+        }
+        20% {
+            text-shadow: -1px 0 0 red, 1px 0 0 lime;
+        }
+        21% {
+            text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
+        }
+        30% {
+            text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
+        }
+        31% {
+            text-shadow: -1px 0 0 blue, 1px 0 0 lime;
+        }
+        40% {
+            text-shadow: -1px 0 0 blue, 1px 0 0 lime;
+        }
+        41% {
+            text-shadow: 15px 0 0 blue, -15px 0 0 lime;
+        }
+        42% {
+            text-shadow: 0 0 0 blue, 0 0 0 lime;
+        }
+        43% {
+            text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
+        }
+        46% {
+            text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
+        }
+        47% {
+            text-shadow: -1px 0 0 red, 1px 0 0 lime;
+        }
+        50% {
+            text-shadow: -1px 0 0 red, 1px 0 0 lime;
+        }
+        51% {
+            text-shadow: 1px 0 0 red, -1px 0 0 blue;
+        }
+        55% {
+            text-shadow: 1px 0 0 red, -1px 0 0 blue;
+        }
+        56% {
+            text-shadow: -1px 0 0 red, 1px 0 0 blue;
+        }
+        60% {
+            text-shadow: -1px 0 0 red, 1px 0 0 blue;
+        }
+        61% {
+            text-shadow: 10px 0 0 red, -10px 0 0 lime;
+        }
+        62% {
+            text-shadow: 0 0 0 red, 0 0 0 lime;
+        }
+        63% {
+            text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;
+        }
+        66% {
+            text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;
+        }
+        67% {
+            text-shadow: -1px 0 0 red, 1px 0 0 blue;
+        }
+        70% {
+            text-shadow: -1px 0 0 red, 1px 0 0 blue;
+        }
+        71% {
+            text-shadow: 25px 0 0 red, -25px 0 0 blue;
+        }
+        72% {
+            text-shadow: 0 0 0 red, 0 0 0 blue;
+        }
+        73% {
+            text-shadow: 1px 0 0 red, -1px 0 0 blue;
+        }
+        76% {
+            text-shadow: 1px 0 0 red, -1px 0 0 blue;
+        }
+        77% {
+            text-shadow: -1px 0 0 red, 1px 0 0 blue;
+        }
+        80% {
+            text-shadow: -1px 0 0 red, 1px 0 0 blue;
+        }
+        81% {
+            text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
+        }
+        85% {
+            text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;
+        }
+        86% {
+            text-shadow: -1px 0 0 red, 1px 0 0 lime;
+        }
+        90% {
+            text-shadow: -1px 0 0 red, 1px 0 0 lime;
+        }
+        91% {
+            text-shadow: 20px 0 0 lime, -20px 0 0 blue;
+        }
+        92% {
+            text-shadow: 0 0 0 lime, 0 0 0 blue;
+        }
+        92% {
+            text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
+        }
+        95% {
+            text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;
+        }
+        96% {
+            text-shadow: -1px 0 0 blue, 1px 0 0 lime;
+        }
+        99% {
+            text-shadow: -1px 0 0 blue, 1px 0 0 lime;
+        }
+        100% {
+            text-shadow: -1px 0 0 blue, 1px 0 0 lime;
+        }
+      }
+      }
+}
+
+@keyframes navbar {
+   0% {
+      left: -100%;
+   }
+   100% {
+      left: 200px;
+   }
+   
+}
+
+@media screen and (max-width: 1600px) {
+    @keyframes navbar {
+        0% {
+           left: -100%;
+        }
+        100% {
+           left: 150px;
+        }
+        
+     }
+   }
+

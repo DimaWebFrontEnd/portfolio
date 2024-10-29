@@ -1,0 +1,29 @@
+.header__logo {
+   width: 100px;
+   height: 100px;
+   z-index: 2;
+   &--item {
+      width: 100px;
+      height: 100px;
+      position: fixed;
+      left: 0;
+      background-color: $btn-color;
+      border-bottom-right-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: logo 1s ease;
+      & h1 {
+         width: 50px;
+      }
+
+   }
+   @keyframes logo {
+      0% {
+         top: -100%;
+      }
+      100% {
+         top: 0;
+      }
+   }
+}

@@ -1,0 +1,33 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   height: 100%;
+   
+}
+
+body {
+   background-color: #1D1D1D;
+   background-repeat: no-repeat;
+   font-family: "Comfortaa", sans-serif;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   align-items: center;
+   /* max-width: 1600px; */
+}
+
+
+
+/* Screen Sizes */
+
+$XS: 375;
+$S: 576;
+$M: 768;
+$L: 992;
+$XL: 1200;
+$XXL: 1600px;

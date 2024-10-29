@@ -1,0 +1,46 @@
+.social__media {
+   display: flex;
+   justify-content: space-between;
+   /* width: 80px; */
+   & a {
+      & i {
+         font-size: 2rem;
+      }
+      /* background-color: white; */
+      /* color: black; */
+      /* border-radius: 50%; */
+      /* shape-outside: circle();
+      clip-path: circle(); */
+      
+      color: white;
+     
+      padding: 10px;
+      transition: all 0.3s ease;
+      display: inline-block;
+      position: relative;
+   }
+
+   /* & a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      height: 5px;
+      border-radius: 2px;
+      background-color: $btn-color;
+      transition: all 0.3s ease;
+   }
+
+   &__en:hover::after,
+   &__ua:hover::after {
+      width: 80%;
+   }
+
+   &__en:hover,
+   &__ua:hover {
+      
+      color: dodgerblue;
+     
+      cursor: pointer;
+   } */
+}

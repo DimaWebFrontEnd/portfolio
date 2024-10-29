@@ -1,0 +1,42 @@
+.language {
+   display: flex;
+   justify-content: space-between;
+   /* width: 80px; */
+   &__en,
+   &__ua {
+      /* background-color: white; */
+      /* color: black; */
+      /* border-radius: 50%; */
+      /* shape-outside: circle();
+      clip-path: circle(); */
+      padding: 10px;
+      transition: all 0.3s ease;
+      display: inline-block;
+      position: relative;
+   }
+
+   &__en::after,
+   &__ua::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      height: 5px;
+      border-radius: 2px;
+      background-color: $btn-color;
+      transition: all 0.3s ease;
+   }
+
+   &__en:hover::after,
+   &__ua:hover::after {
+      width: 80%;
+   }
+
+   &__en:hover,
+   &__ua:hover {
+      /* box-shadow: 0 0 15px #ffee10; */
+      color: dodgerblue;
+      /* box-shadow: 0 0 5px dodgerblue; */
+      cursor: pointer;
+   }
+}

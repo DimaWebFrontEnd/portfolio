@@ -1,0 +1,88 @@
+.contact {
+  
+   /* min-width: 100%; */
+   width: 100%;
+   max-width: 830px;
+   @media screen and (max-width: 850px) {
+      /* flex-direction: column; */
+      /* width: 100%; */
+      max-width: 780px;
+   }
+   @media screen and (max-width: 800px) {
+      margin-top: 150px;
+   }
+   h1 {
+      font-size: 1.2rem;
+   }
+   .contact__with--me {
+      margin-top: 15px;
+      padding-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      border-top: 2px solid;
+      h2:nth-child(2) {
+         font-weight: lighter;
+         margin-left: 20px;
+      }
+      .contact__mail {
+         width: 50%;
+         display: flex;
+         justify-content: space-between;
+         /* & h2:nth-child(2) {
+            color: $yellow;
+         } */
+         @media screen and (max-width: 800px) {
+            width: 100%;
+            margin-bottom: 20px;
+         }
+      }
+      .contact__soc {
+         display: flex;
+         justify-content: space-between;
+         width: 45%;
+         @media screen and (max-width: 800px) {
+            width: 100%;
+         }
+         .contact__social {
+            
+            & a:first-child {
+               h2 {
+                  padding-top: 0px;
+               }
+            }
+            & a {
+               
+               text-decoration:  none;
+               color: dodgerblue;
+               transition: all 0.3s ease-in-out;
+               h2 {
+                  padding-top: 15px;
+                  font-weight: lighter;
+                  transition: all 0.3s ease-in-out;
+               }
+            }
+            & a:hover h2 {
+              /* scale: 1.1; */
+              animation: social 1s infinite;
+              @keyframes social {
+
+               0% {
+                  transform: translateX(-10%);
+               }
+               50% {
+                  transform: translateX(10%);
+               }
+               100% {
+                  transform: translateX(-10%);
+               }
+              }
+            }
+
+         }
+      }
+      @media screen and (max-width: 800px) {
+         flex-wrap: wrap;
+         flex-direction: column;
+      }
+   }
+}
