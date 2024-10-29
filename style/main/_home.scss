@@ -2,6 +2,9 @@
    color: white;
    width: 100%;
    max-width: 1030px;
+   @media screen and (max-width: 1200px) {
+      max-width: 830px;
+   }
    .home__wrap {
       position: relative;
       /* @media screen and (max-width: 1200px) {

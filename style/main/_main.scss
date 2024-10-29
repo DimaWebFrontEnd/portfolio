@@ -10,6 +10,9 @@ main {
    @media screen and (max-width: 1600px) {
       padding: 40px;
    }
+   @media screen and (max-width: 1200px) {
+      justify-content: center;
+   }
    @media screen and (max-width: 800px) {
       justify-content: space-between;
       margin-top: 200px;
