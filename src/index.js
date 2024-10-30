@@ -81,6 +81,7 @@ function nextPrevBlocks() {
    const nextBtn = document.querySelector(".next");
    const prevBtn = document.querySelector(".previous");
    const liElements = document.querySelectorAll("nav li");
+   const img = document.querySelector(".pictures img")
    let i = 0;
 
    function prevBtnVisability() {
@@ -111,6 +112,7 @@ function nextPrevBlocks() {
    liElements.forEach((element, index) => {
       element.addEventListener("click", (e) => {
          i = index;
+         img.src = i === 0 ? "img/home.webp" : i === 1 ? "img/projects.webp" : i === 2 ? "img/tech.webp" : i === 3 ? "img/contact.webp" : "img/home.webp";
          removeActiveLi()
          e.target.classList.add("active")
          blocks.forEach(block => {block.classList.remove("active")});
@@ -127,6 +129,7 @@ function nextPrevBlocks() {
       if (i > 3) {
          i = 3;
       }
+      img.src = i === 0 ? "img/home.webp" : i === 1 ? "img/projects.webp" : i === 2 ? "img/tech.webp" : i === 3 ? "img/contact.webp" : "img/home.webp";
       blocks.forEach(block => {block.classList.remove("active")});
       liElements.forEach(elem => elem.classList.remove("active"));
       blocks[i].classList.add("active");
@@ -138,6 +141,7 @@ function nextPrevBlocks() {
    
    function prevBlock() {
       i--;
+      img.src = i === 0 ? "img/home.webp" : i === 1 ? "img/projects.webp" : i === 2 ? "img/tech.webp" : i === 3 ? "img/contact.webp" : "img/home.webp";
       blocks.forEach(block => {block.classList.remove("active")});
       liElements.forEach(elem => elem.classList.remove("active"));
       blocks[i].classList.add("active");
