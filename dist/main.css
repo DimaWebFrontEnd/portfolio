@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   height: 100%;
   align-items: center;
-  /* max-width: 1600px; */
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Screen Sizes */
@@ -681,6 +681,9 @@ nav ul .ul__li.active {
   }
 }
 
+.pictures {
+  /* backdrop-filter: blur(10px); */
+}
 .pictures img {
   position: absolute;
   width: 100%;
@@ -691,8 +694,15 @@ nav ul .ul__li.active {
   top: 0;
   bottom: 0;
   object-fit: cover;
-  animation: pict 3s ease;
+  animation: pict 1s ease;
   filter: brightness(20%);
+  /* backdrop-filter: blur(20px); */
+}
+.pictures .pictures__bg {
+  display: none;
+}
+.pictures .isActive {
+  display: block;
 }
 
 @keyframes pict {

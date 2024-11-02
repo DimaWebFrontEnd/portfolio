@@ -1,5 +1,6 @@
 .pictures {
-   
+   /* backdrop-filter: blur(10px); */
+
    img {
    position: absolute;
    width: 100%;
@@ -10,8 +11,17 @@
    top: 0;
    bottom: 0;
    object-fit: cover;
-   animation: pict 3s ease;
+   animation: pict 1s ease;
    filter: brightness(20%);
+   /* backdrop-filter: blur(20px); */
+   
+   }
+   .pictures__bg {
+      display: none;
+   }
+
+   .isActive {
+      display: block;
    }
 }
 
