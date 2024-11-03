@@ -36,7 +36,7 @@ header {
   justify-content: space-between;
   width: 100%;
   max-width: 1600px;
-  padding-inline: 20px;
+  padding-inline: 80px;
 }
 
 .header__burger {
@@ -214,8 +214,8 @@ main {
   align-items: center;
   justify-content: flex-end;
   flex: 1 1 auto;
-  min-width: 100%;
-  /* width: 100%; */
+  /* min-width: 100%; */
+  width: 100%;
   max-width: 1600px;
   padding: 20px 80px;
 }
@@ -723,6 +723,11 @@ nav ul .ul__li.active {
   column-gap: 20px;
   /* bottom: 10%;
   right: 200px; */
+  /*   .next:active,
+    .previous:active {
+       background-color: white;
+       transition: all 0s ease;
+    } */
 }
 @media screen and (max-width: 800px) {
   .buttons {

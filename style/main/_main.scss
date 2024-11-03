@@ -3,10 +3,12 @@ main {
    align-items: center;
    justify-content: flex-end;
    flex: 1 1 auto;
-   min-width: 100%;
-   /* width: 100%; */
+   /* min-width: 100%; */
+   width: 100%;
    max-width: $XXL;
+   
    padding: 20px 80px;
+   
    @media screen and (max-width: 1600px) {
       padding: 40px;
    }

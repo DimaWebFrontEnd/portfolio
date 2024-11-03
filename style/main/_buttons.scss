@@ -28,6 +28,11 @@
       transition: all 0.3s ease;
       user-select: none;
    }
+ /*   .next:active,
+   .previous:active {
+      background-color: white;
+      transition: all 0s ease;
+   } */
    @keyframes btn {
       0% {
          opacity: 0;
