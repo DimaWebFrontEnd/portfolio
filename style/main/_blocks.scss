@@ -5,13 +5,16 @@
    @media screen and (max-width: 1400px) {
       height: 440px;
    }
-  
    @media screen and (max-width: 800px) {
+      height: 100%;
+   }
+  
+   /* @media screen and (max-width: 800px) {
       display: flex;
       flex-direction: column;
       height: 100%;
       margin-bottom: 40px;
-   }
+   } */
 }
 
 .block.active {

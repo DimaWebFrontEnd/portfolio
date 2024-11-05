@@ -91,10 +91,12 @@ function nextPrevBlocks() {
       if (offset < 600) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[0].classList.add("isActive");
+         blocks[0].classList.add("block")
       }
       if (offset > 600) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[1].classList.add("isActive");
+         //blocks[1].classList.add("block")
       }
       if (offset > 900) {
          imgs.forEach(img => {img.classList.remove("isActive")});
