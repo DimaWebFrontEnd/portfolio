@@ -10,7 +10,16 @@ html {
 }
 
 body {
-   background-color: #1D1D1D;
+/*    @media screen and (max-width: 800px) {
+      background-image: url(../img/home.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      filter: brightness(20%);
+   } */
+   /* background-color: #1D1D1D; */
+   
+   background-color: black;
    background-repeat: no-repeat;
    font-family: "Comfortaa", sans-serif;
    color: white;

@@ -85,11 +85,28 @@ function nextPrevBlocks() {
    const imgs = document.querySelectorAll(".pictures__bg")
    let i = 0;
 
-   // Background Images
-  /*  function bgImg(i) {
-      img
-   }
- */
+   // Background Images On Scroll
+   window.addEventListener("scroll", () => {
+      let offset = window.scrollY;
+      if (offset < 600) {
+         imgs.forEach(img => {img.classList.remove("isActive")});
+         imgs[0].classList.add("isActive");
+      }
+      if (offset > 600) {
+         imgs.forEach(img => {img.classList.remove("isActive")});
+         imgs[1].classList.add("isActive");
+      }
+      if (offset > 900) {
+         imgs.forEach(img => {img.classList.remove("isActive")});
+         imgs[2].classList.add("isActive");
+      }
+      if (offset > 1200) {
+         imgs.forEach(img => {img.classList.remove("isActive")});
+         imgs[3].classList.add("isActive");
+      }
+    
+   })
+
    // Previuos Button
    function prevBtnVisability() {
       if (i < 1) {

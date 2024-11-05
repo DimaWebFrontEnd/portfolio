@@ -2,6 +2,7 @@
    color: white;
    width: 100%;
    max-width: 1030px;
+   
    @media screen and (max-width: 1200px) {
       max-width: 830px;
    }
@@ -20,12 +21,14 @@
          margin-bottom: 15px;
          width: 100%;
          max-width: 830px;
-         /* @media screen and (max-width: 800px) {
-            max-width: 700px
-         } */
+         @media screen and (max-width: 800px) {
+            flex-direction: column;
+            align-items: flex-start;
+         }
          & .welcome {
             font-size: 2rem;
             animation: welcome 0.5s ease;
+            margin-bottom: 20px;
          }
          @keyframes welcome {
             0% {
@@ -47,6 +50,10 @@
             cursor: pointer;
             animation: contact 4s ease;
             transition: all 0.3s ease;
+            text-align: center;
+            @media screen and (max-width: 800px) {
+               width: 100%;
+            }
          }
          &--btn:hover {
             /* filter: brightness(120%); */

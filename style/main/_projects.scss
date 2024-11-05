@@ -1,9 +1,9 @@
 .projects {
-   flex-direction: column;
    @media screen and (max-width: 800px) {
       margin-top: 150px;
    }
    &__wrapp {
+
       width: 100%;
       max-width: 1030px;
       display: flex;
@@ -35,10 +35,10 @@
          display: flex;
          align-items: center;
          justify-content: center;
-         @media screen and (max-width: 800px) {
+        /*  @media screen and (max-width: 800px) {
             width: calc((100% - 60px) / 3);
-         }
-         @media screen and (max-width: 600px) {
+         } */
+         @media screen and (max-width: 800px) {
             width: calc((100% - 40px) / 2);
          }
       }
