@@ -11,6 +11,9 @@
    }
    h1 {
       font-size: 1.2rem;
+      @media screen and (max-width: 471px) {
+         font-size: 2rem;
+      }
    }
    .contact__with--me {
       margin-top: 15px;
@@ -18,17 +21,24 @@
       display: flex;
       justify-content: space-between;
       border-top: 2px solid;
-      h2:nth-child(2) {
-         font-weight: lighter;
-         margin-left: 20px;
-      }
+    
       .contact__mail {
          width: 50%;
          display: flex;
          justify-content: space-between;
-         /* & h2:nth-child(2) {
-            color: $yellow;
-         } */
+         flex-wrap: wrap;
+         @media screen and (max-width: 471px) {
+            flex-direction: column;
+         }
+         & h2:nth-child(2) {
+            color: $btn-color;
+            font-weight: lighter;
+            margin-left: 20px;
+            @media screen and (max-width: 471px) {
+               margin: 20px 0 0 0;
+               font-size: 1.2rem;
+            }
+         }
          @media screen and (max-width: 800px) {
             width: 100%;
             margin-bottom: 20px;
@@ -41,11 +51,17 @@
          @media screen and (max-width: 800px) {
             width: 100%;
          }
+         @media screen and (max-width: 471px) {
+            flex-direction: column;
+         }
          .contact__social {
             
             & a:first-child {
                h2 {
                   padding-top: 0px;
+                  @media screen and (max-width: 471px) {
+                     padding-top: 20px;
+                  }
                }
             }
             & a {
@@ -57,10 +73,12 @@
                   padding-top: 15px;
                   font-weight: lighter;
                   transition: all 0.3s ease-in-out;
+                  @media screen and (max-width: 471px) {
+                     font-size: 1.2rem;
+                  }
                }
             }
             & a:hover h2 {
-              /* scale: 1.1; */
               animation: social 1s infinite;
               @keyframes social {
 
