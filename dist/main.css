@@ -777,11 +777,6 @@ nav ul .ul__li.active {
   column-gap: 20px;
   /* bottom: 10%;
   right: 200px; */
-  /*   .next:active,
-    .previous:active {
-       background-color: white;
-       transition: all 0s ease;
-    } */
 }
 @media screen and (max-width: 800px) {
   .buttons {
@@ -861,7 +856,7 @@ nav ul .ul__li.active {
   padding: 20px;
   border-radius: 10px;
   width: calc((100% - 80px) / 4);
-  height: 150px;
+  height: 180px;
   /* aspect-ratio: 1/ 1; */
   display: flex;
   align-items: center;
@@ -873,6 +868,11 @@ nav ul .ul__li.active {
 @media screen and (max-width: 800px) {
   .projects__wrapp .projects__site {
     width: calc((100% - 40px) / 2);
+  }
+}
+@media screen and (max-width: 520px) {
+  .projects__wrapp .projects__site {
+    width: 100%;
   }
 }
 .projects__wrapp a:hover {
@@ -888,12 +888,6 @@ nav ul .ul__li.active {
   display: none;
   height: 450px;
   width: 100%;
-  /* @media screen and (max-width: 800px) {
-     display: flex;
-     flex-direction: column;
-     height: 100%;
-     margin-bottom: 40px;
-  } */
 }
 @media screen and (max-width: 1400px) {
   .block {
@@ -903,6 +897,14 @@ nav ul .ul__li.active {
 @media screen and (max-width: 800px) {
   .block {
     height: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 40px;
   }
 }
 
@@ -946,19 +948,21 @@ nav ul .ul__li.active {
   width: calc((100% - 80px) / 4);
   /* width: 100%; */
   /* max-width: 200px; */
-  height: 150px;
+  height: 180px;
   margin: 10px;
   border-radius: 15px;
   animation: img 0.6s ease-in-out;
+  /*  @media screen and (max-width: 800px) {
+      width: calc((100% - 60px) / 3);
+   } */
+  /* @media screen and (max-width: 520px) {
+     width: 100%;
+  } */
 }
 @media screen and (max-width: 800px) {
   .technologies__wrapp--img img {
-    width: calc((100% - 60px) / 3);
-  }
-}
-@media screen and (max-width: 600px) {
-  .technologies__wrapp--img img {
     width: calc((100% - 40px) / 2);
+    height: auto;
   }
 }
 .technologies__wrapp--img img:nth-child(2) {
@@ -995,16 +999,12 @@ nav ul .ul__li.active {
 }
 
 .contact {
-  /* min-width: 100%; */
   width: 100%;
   max-width: 830px;
-  /* text-shadow: 1px 1px black; */
-  /* color: brown; */
+  margin-bottom: 200px;
 }
 @media screen and (max-width: 850px) {
   .contact {
-    /* flex-direction: column; */
-    /* width: 100%; */
     max-width: 780px;
   }
 }
