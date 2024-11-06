@@ -55,7 +55,9 @@
             flex-direction: column;
          }
          .contact__social {
-            
+            @media screen and (max-width: 471px) {
+               width: fit-content;
+            }
             & a:first-child {
                h2 {
                   padding-top: 0px;

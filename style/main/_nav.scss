@@ -6,6 +6,9 @@ nav {
     font-size: 1rem;
     left: 150px;
    }
+   @media screen and (max-width: 1400px) {
+    left: 80px;
+   }
    @media screen and (max-width: 1200px) {
     display: none;
    }
@@ -184,5 +187,16 @@ nav {
         }
         
      }
-   }
+}
+@media screen and (max-width: 1400px) {
+    @keyframes navbar {
+        0% {
+           left: -100%;
+        }
+        100% {
+           left: 80px;
+        }
+        
+     }
+}
 
