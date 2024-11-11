@@ -219,6 +219,9 @@
             height: 100%;
             padding: 40px;
          }
+         @media screen and (max-width: 450px) {
+            padding: 20px;
+         }
 
          & h1 {
             font-size: 1.5rem;

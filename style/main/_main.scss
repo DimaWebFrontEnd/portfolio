@@ -19,5 +19,8 @@ main {
       justify-content: space-between;
       margin-top: 200px;
    }
+   @media screen and (max-width: 450px) {
+      padding: 10px;
+   }
 
 }
