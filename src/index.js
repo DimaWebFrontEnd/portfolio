@@ -53,6 +53,30 @@ function contactMe() {
 
 contactMe();
 
+/* || Technologies I Use Block With IntersectionObserver */
+
+function tech() {
+   const cards = document.querySelectorAll(".tech__in");
+
+   const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+         if (!entry.isIntersecting) return
+         entry.target.classList.toggle("show", entry.isIntersecting);
+      })
+   }, 
+ /*   {
+      
+      threshold: 1
+   } */)
+
+   cards.forEach(card => {
+      observer.observe(card)
+
+   })
+   //console.log(cards)
+}
+tech()
+
 
 
 /* || NAVBAR */
@@ -82,7 +106,7 @@ function nextPrevBlocks() {
    const prevBtn = document.querySelector(".previous");
    const liElements = document.querySelectorAll("nav li");
    /* const img = document.querySelector(".pictures img") */
-   const imgs = document.querySelectorAll(".pictures__bg")
+   const imgs = document.querySelectorAll(".pictures__bg");
    let i = 0;
 
    // Background Images On Scroll
@@ -91,18 +115,18 @@ function nextPrevBlocks() {
       if (offset < 600) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[0].classList.add("isActive");
-         blocks[0].classList.add("block");
+         //blocks[0].classList.add("block");
       }
       if (offset > 600) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[1].classList.add("isActive");
          //blocks[1].classList.add("block")
       }
-      if (offset > 900) {
+      if (offset > 1300) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[2].classList.add("isActive");
       }
-      if (offset > 1200) {
+      if (offset > 2200) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[3].classList.add("isActive");
       }
