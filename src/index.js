@@ -122,7 +122,7 @@ function nextPrevBlocks() {
          imgs[1].classList.add("isActive");
          //blocks[1].classList.add("block")
       }
-      if (offset > 1300) {
+      if (offset > 1400) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[2].classList.add("isActive");
       }
