@@ -1249,6 +1249,9 @@ nav ul .ul__li.active {
   .contact .contact__with--me .contact__mail,
   .contact .contact__with--me .contact__soc {
     animation: none;
+    transition: all 0.5s ease;
+    transform: translateY(100%);
+    opacity: 0;
   }
 }
 @keyframes allContacts {
@@ -1379,6 +1382,10 @@ nav ul .ul__li.active {
   100% {
     width: 100%;
   }
+}
+.contact .contact__with--me.show {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* // Functions first

@@ -53,18 +53,10 @@ function contactMe() {
 
 contactMe();
 
-/* || Technologies I Use Block With IntersectionObserver */
+/* || Projects Block With IntersectionObserver */
 
 function projects() {
    const cards = document.querySelectorAll(".projects__site");
-   //const name = document.querySelector(".projects__h1");
-
-   /* const nameObserver = new IntersectionObserver(entry => {
-      entry.target.classList.toggle("show", entry.isIntersecting);
-   })
-
-   nameObserver.observe(nameObserver) */
-
 
    const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -90,19 +82,33 @@ function tech() {
          if (!entry.isIntersecting) return
          entry.target.classList.toggle("show", entry.isIntersecting);
       })
-   }, 
- /*   {
-      
-      threshold: 1
-   } */)
+   })
 
    cards.forEach(card => {
       observer.observe(card)
 
    })
-   //console.log(cards)
 }
 tech()
+
+/* || Contacts Block With IntersectionObserver */
+
+function contactsObserve() {
+   const cards = document.querySelectorAll("[data-contact]");
+
+   const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+         if (!entry.isIntersecting) return
+         entry.target.classList.toggle("show", entry.isIntersecting);
+      })
+   })
+
+   cards.forEach(card => {
+      observer.observe(card)
+
+   })
+}
+contactsObserve()
 
 
 
