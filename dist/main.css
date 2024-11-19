@@ -854,6 +854,11 @@ nav ul .ul__li.active {
   border-bottom-left-radius: 40px;
 }
 
+.projects i {
+  color: dodgerblue;
+  font-size: 2rem;
+  transition: all 0.5s ease;
+}
 .projects .projects__h1 {
   font-size: 2rem;
   /* transform: rotate(45deg); */
@@ -875,6 +880,11 @@ nav ul .ul__li.active {
   flex-wrap: wrap;
   line-height: 1.7;
   gap: 10px;
+  /*    
+        & a:hover .projects__mywork i {
+           scale: 1.1;
+
+        } */
 }
 @media screen and (max-width: 1600px) {
   .projects__wrapp {
@@ -885,6 +895,7 @@ nav ul .ul__li.active {
   color: white;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.51, 0.04, 0.63, 1.4);
+  overflow: hidden;
   /*  h1 {
       transition: all 0.65s cubic-bezier(0.68, -0.12, 0.78, 1.6);
    } */
@@ -901,29 +912,38 @@ nav ul .ul__li.active {
   height: 150px;
   /* aspect-ratio: 1/ 1; */
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
   justify-content: center;
   /*  @media screen and (max-width: 800px) {
       width: calc((100% - 60px) / 3);
    } */
+  /*  & h1 {
+      text-align: center;
+   } */
   /* @media screen and (max-width: 520px) {
      width: 100%;
   } */
-}
-.projects__wrapp .projects__site i {
-  color: dodgerblue;
-  font-size: 2rem;
-}
-.projects__wrapp .projects__site i:hover {
-  scale: 1.5;
 }
 @media screen and (max-width: 800px) {
   .projects__wrapp .projects__site {
     width: calc((100% - 40px) / 2);
   }
 }
-.projects__wrapp a:hover i {
-  scale: 1.1;
+.projects__wrapp .projects__site:hover i {
+  transform: translateX(80%);
+  animation: arrow 0.5s 0.5s ease infinite;
+}
+@keyframes arrow {
+  0% {
+    transform: translateX(80%);
+  }
+  50% {
+    transform: translateX(70%);
+  }
+  100% {
+    transform: translateX(80%);
+  }
 }
 
 .block {
