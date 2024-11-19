@@ -12,7 +12,9 @@
    h1 {
       font-size: 2rem;
       animation: contactWith 0.5s ease;
-      
+      @media screen and (max-width: 800px) {
+         animation: none;
+      }
       
    }
    @keyframes contactWith {
@@ -33,7 +35,29 @@
       /* border-top: 2px solid; */
       overflow: hidden;
       position: relative;
-   
+      
+      .contact__mail,
+      .contact__soc {
+         animation: allContacts 1.3s ease;
+         @media screen and (max-width: 800px) {
+            animation: none;
+         }
+      }
+      @keyframes allContacts {
+         0% {
+            transform: translateY(100%);
+            opacity: 0;
+         }
+         50% {
+            transform: translateY(100%);
+            opacity: 0;
+         }
+         100% {
+            transform: translateY(0);
+            opacity: 1;
+         }
+      }
+
       .contact__mail {
          width: 50%;
          display: flex;
@@ -125,16 +149,23 @@
       background-color: white;
       position: absolute;
       top: 0;
-      animation: contactLine 0.5s ease;
+      animation: contactLine 0.9s ease;
+      @media screen and (max-width: 800px) {
+         animation: none;
+      }
    }
    @keyframes contactLine {
       0% {
          width: 0;
-         opacity: 0;
+
       }
-      0% {
+      50% {
+         width: 0;
+
+      }
+      100% {
          width: 100%;
-         opacity: 1;
+         
       }
    }
 }
