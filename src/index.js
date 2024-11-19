@@ -55,6 +55,33 @@ contactMe();
 
 /* || Technologies I Use Block With IntersectionObserver */
 
+function projects() {
+   const cards = document.querySelectorAll(".projects__site");
+   //const name = document.querySelector(".projects__h1");
+
+   /* const nameObserver = new IntersectionObserver(entry => {
+      entry.target.classList.toggle("show", entry.isIntersecting);
+   })
+
+   nameObserver.observe(nameObserver) */
+
+
+   const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+         if (!entry.isIntersecting) return
+         entry.target.classList.toggle("show", entry.isIntersecting);
+      })
+   })
+
+   cards.forEach(card => {
+      observer.observe(card)
+   })
+   //console.log(cards)
+}
+projects()
+
+/* || Technologies I Use Block With IntersectionObserver */
+
 function tech() {
    const cards = document.querySelectorAll(".tech__in");
 
@@ -112,15 +139,16 @@ function nextPrevBlocks() {
    // Background Images On Scroll
    window.addEventListener("scroll", () => {
       let offset = window.scrollY;
+      
       if (offset < 600) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[0].classList.add("isActive");
-         //blocks[0].classList.add("block");
+         
       }
       if (offset > 600) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[1].classList.add("isActive");
-         //blocks[1].classList.add("block")
+
       }
       if (offset > 1400) {
          imgs.forEach(img => {img.classList.remove("isActive")});

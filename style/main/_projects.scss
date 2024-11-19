@@ -1,6 +1,8 @@
 .projects {
+   overflow: hidden;
    i {
-      color: $btn-color;
+      /* color: $btn-color; */
+      color: $yellow;
       font-size: 2rem;
       transition: all 0.5s ease;
       
@@ -8,10 +10,17 @@
     
    & .projects__h1 {
       font-size: 2rem;
-      /* transform: rotate(45deg); */
+      transition: all 0.5s ease;
+      transform: translateY(100%);
+      opacity: 0;
+      margin-bottom: 10px;
       @media screen and (max-width: 800px) {
          margin-bottom: 20px;
       }
+   }
+   & .projects__h1.show {
+      transform: translateX(0);
+      opacity: 1;
    }
    @media screen and (max-width: 800px) {
       margin-top: 150px;
@@ -48,28 +57,36 @@
          padding: 20px;
          border-radius: 15px;
          width: calc((100% - 40px) / 4);
-         height: 150px;;
-         /* aspect-ratio: 1/ 1; */
+         height: 150px;
          display: flex;
          flex-direction: column;
-         /* align-items: center; */
          justify-content: center;
-        /*  @media screen and (max-width: 800px) {
-            width: calc((100% - 60px) / 3);
-         } */
-        /*  & h1 {
-            text-align: center;
-         } */
-         
-            
-
-      
+         transition: all 0.5s ease;
+         transform: translateY(100%);
+         opacity: 0;
+         border: 1px solid $btn-color;
+         animation: projects 0.5s ease;
          @media screen and (max-width: 800px) {
-            width: calc((100% - 40px) / 2);
+            width: calc((100% - 10px) / 2);
+            animation:none;
          }
          /* @media screen and (max-width: 520px) {
             width: 100%;
          } */
+      }
+      @keyframes projects {
+        0% {
+         transform: translateY(100%);
+         opacity: 1;
+        } 
+        100% {
+         transform: translateY(0);
+         opacity: 1;
+        }
+      }
+      .projects__site.show {
+         transform: translateY(0);
+         opacity: 1;
       }
       .projects__site:hover i {
       
