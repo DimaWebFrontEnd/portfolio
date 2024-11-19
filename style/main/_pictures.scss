@@ -1,10 +1,23 @@
 .pictures {
-   height: 100vh;
+  
    
    /* height: 100vh; */
    /* backdrop-filter: blur(10px); */
 
+   img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   object-fit: cover;
+   animation: pict 0.5s ease;
    
+   
+   }
    .pictures__bg {
       display: none;
       position: fixed;
@@ -24,20 +37,6 @@
       /* @media screen and (max-width: 900px) {
          display: block;
       } */
-      img {
-         position: absolute;
-         width: 100%;
-         height: 100%;
-         z-index: -1;
-         left: 0;
-         right: 0;
-         top: 0;
-         bottom: 0;
-         object-fit: cover;
-         animation: pict 0.5s ease;
-         
-         
-         }
    }
 
    /* .pictures__bg:first-child {

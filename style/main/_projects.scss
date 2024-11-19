@@ -1,6 +1,8 @@
 .projects {
+  
    & .projects__h1 {
       font-size: 2rem;
+      /* transform: rotate(45deg); */
       @media screen and (max-width: 800px) {
          margin-bottom: 20px;
       }
@@ -15,13 +17,17 @@
       display: flex;
       flex-wrap: wrap;
       line-height: 1.7;
+      gap: 10px;
+      
       @media screen and (max-width: 1600px) {
          max-width: 900px;
       }
       & a {
+         
          color: white;
          text-decoration: none;
          transition: all 0.3s cubic-bezier(0.51, 0.04, 0.63, 1.4);
+         
         /*  h1 {
             transition: all 0.65s cubic-bezier(0.68, -0.12, 0.78, 1.6);
          } */
@@ -29,14 +35,14 @@
             width: 100%;
             height: auto;
           }
+          
       }
       .projects__site {
          background: rgba(255, 255, 255, 0.04);
-         margin: 10px;
          padding: 20px;
-         border-radius: 10px;
-         width: calc((100% - 80px) / 4);
-         height: 150px;
+         border-radius: 15px;
+         width: calc((100% - 40px) / 4);
+         height: 150px;;
          /* aspect-ratio: 1/ 1; */
          display: flex;
          align-items: center;
@@ -44,6 +50,16 @@
         /*  @media screen and (max-width: 800px) {
             width: calc((100% - 60px) / 3);
          } */
+         i {
+            color: $btn-color;
+            font-size: 2rem;
+          }
+           i:hover {
+             scale: 1.5;
+          }
+            
+
+      
          @media screen and (max-width: 800px) {
             width: calc((100% - 40px) / 2);
          }
@@ -51,13 +67,10 @@
             width: 100%;
          } */
       }
-      & a:hover {
+
+      & a:hover i {
          scale: 1.1;
-        /*  border-radius: 100%;
-         transform: rotate(-90deg);
-         & h1 {
-            transform: rotate(90deg);
-         } */
+        
       }
       
    }
