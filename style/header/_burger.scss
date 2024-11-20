@@ -42,7 +42,7 @@
          
       }
       .header__burger--line-top.pressed {
-         transform: rotate(45deg) translate(3px);
+         transform: rotate(45deg) translate(4px);
       }
       .header__burger--line-bottom {
          position: absolute;
@@ -55,7 +55,7 @@
          transition: all ease-in-out 0.3s;
       }
       .header__burger--line-bottom.pressed {
-         transform: rotate(45deg) translate(-3px);
+         transform: rotate(45deg) translate(-4px);
       }
    }
 }
