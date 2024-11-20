@@ -256,6 +256,7 @@ nav {
   position: fixed;
   left: 200px;
   animation: 1s ease navbar;
+  z-index: 5;
 }
 @media screen and (max-width: 1600px) {
   nav {
@@ -424,6 +425,10 @@ nav ul .ul__li.active {
   100% {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
+}
+
+nav.active {
+  display: block;
 }
 
 @keyframes navbar {
@@ -670,7 +675,8 @@ nav ul .ul__li.active {
 }
 @media screen and (max-width: 1400px) {
   .home .home__wrap .home__description {
-    height: 260px;
+    height: 230px;
+    padding: 40px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -808,8 +814,6 @@ nav ul .ul__li.active {
   bottom: 0;
   right: 10px;
   column-gap: 20px;
-  /* bottom: 10%;
-  right: 200px; */
 }
 @media screen and (max-width: 800px) {
   .buttons {
@@ -819,7 +823,6 @@ nav ul .ul__li.active {
 .buttons .next,
 .buttons .previous {
   background-color: dodgerblue;
-  /* color: black; */
   width: 160px;
   padding: 15px 30px;
   border-radius: 15px;
@@ -864,7 +867,7 @@ nav ul .ul__li.active {
   transition: all 0.5s ease;
 }
 .projects .projects__h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   transition: all 0.5s ease;
   transform: translateY(100%);
   opacity: 0;
@@ -933,9 +936,15 @@ nav ul .ul__li.active {
      width: 100%;
   } */
 }
+@media screen and (max-width: 1400px) {
+  .projects__wrapp .projects__site {
+    height: 130px;
+  }
+}
 @media screen and (max-width: 800px) {
   .projects__wrapp .projects__site {
     width: calc((100% - 10px) / 2);
+    height: 150px;
     animation: none;
   }
 }
@@ -976,7 +985,7 @@ nav ul .ul__li.active {
 }
 @media screen and (max-width: 1400px) {
   .block {
-    height: 440px;
+    height: 380px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1018,7 +1027,7 @@ nav ul .ul__li.active {
   max-width: 1030px;
 }
 .technologies__wrapp h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   transition: all 0.5s ease;
   transform: translateX(-100%);
   opacity: 0;
@@ -1077,6 +1086,11 @@ nav ul .ul__li.active {
   font-size: 1.5rem;
   opacity: 1;
   transform: translateX(0);
+}
+@media screen and (max-width: 1400px) {
+  .technologies__wrapp--img .tech__in {
+    height: 130px;
+  }
 }
 @media screen and (max-width: 800px) {
   .technologies__wrapp--img .tech__in {

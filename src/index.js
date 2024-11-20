@@ -11,9 +11,12 @@ function burgerButton() {
    const burgerBtn = document.querySelector(".header__burger");
    
    function pressBurgerBtn() {
+      const nav = document.querySelector("nav");
+      nav.classList.toggle("active")
       document.querySelector(".header__burger--line-top").classList.toggle("pressed");
       document.querySelector(".header__burger--line-centr").classList.toggle("pressed");
       document.querySelector(".header__burger--line-bottom").classList.toggle("pressed");
+      
    }
    
    burgerBtn.addEventListener("click", pressBurgerBtn);

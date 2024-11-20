@@ -6,16 +6,12 @@
    bottom: 0;
    right: 10px;
    column-gap: 20px;
-   /* bottom: 10%;
-   right: 200px; */
    @media screen and (max-width: 800px) {
       display: none;
    }
    .next,
    .previous {
       background-color: $btn-color;
-      
-      /* color: black; */
       width: 160px;
       padding: 15px 30px;
       border-radius: 15px;

@@ -212,7 +212,8 @@
          line-height: 1.7;
          animation: 1s ease block;
          @media screen and (max-width: 1400px) {
-            height: 260px;
+            height: 230px;
+            padding: 40px;
          }
          
          @media screen and (max-width: 650px) {
