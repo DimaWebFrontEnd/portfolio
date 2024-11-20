@@ -1220,6 +1220,9 @@ nav ul .ul__li.active {
 @media screen and (max-width: 800px) {
   .contact h1 {
     animation: none;
+    transition: all 0.5s ease;
+    transform: translateX(-100%);
+    opacity: 0;
   }
 }
 @keyframes contactWith {
@@ -1231,6 +1234,10 @@ nav ul .ul__li.active {
     transform: translateY(0);
     opacity: 1;
   }
+}
+.contact h1.show {
+  transform: translateX(0);
+  opacity: 1;
 }
 .contact .contact__with--me {
   margin-top: 15px;
@@ -1267,6 +1274,11 @@ nav ul .ul__li.active {
     transform: translateY(0);
     opacity: 1;
   }
+}
+.contact .contact__with--me .contact__mail.show,
+.contact .contact__with--me .contact__soc.show {
+  transform: translateY(0);
+  opacity: 1;
 }
 .contact .contact__with--me .contact__mail {
   width: 50%;
