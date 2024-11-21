@@ -3,7 +3,8 @@
    width: 100%;
    max-width: 1030px;
    /* width: fit-content; */
-   
+   /* display: none; */
+   z-index: 3;
    @media screen and (max-width: 1400px) {
       max-width: 930px;
    }
@@ -284,5 +285,10 @@
          }
       }
    }
+}
+
+.home.active {
+   /* display: block; */
+   z-index: -3;
 }
 
