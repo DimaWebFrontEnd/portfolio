@@ -5,9 +5,10 @@ const H = new Home();
 H.createElemAboutMe()
  */
 
-/* || Burger Button */
 
-function burgerButton() {
+ /* || Burger Button */
+
+/* function burgerButton() {
    const burgerBtn = document.querySelector(".header__burger");
    const nav = document.querySelector("nav");
    const main = document.querySelector(".home");
@@ -24,8 +25,7 @@ function burgerButton() {
    burgerBtn.addEventListener("click", pressBurgerBtn);
 }
 
-burgerButton();
-
+burgerButton(); */
 
 
 /* || Contact me */ 
@@ -145,7 +145,27 @@ function nextPrevBlocks() {
    const liElements = document.querySelectorAll("nav li");
    /* const img = document.querySelector(".pictures img") */
    const imgs = document.querySelectorAll(".pictures__bg");
+   const nav = document.querySelector("nav");
+   const main = document.querySelector(".home");
+
+   const burgerBtn = document.querySelector(".header__burger");
+
+   /* || Burger Button */
+   function pressBurgerBtn() {
+      nav.classList.toggle("active")
+      main.classList.toggle("active")
+      document.querySelector(".header__burger--line-top").classList.toggle("pressed");
+      document.querySelector(".header__burger--line-centr").classList.toggle("pressed");
+      document.querySelector(".header__burger--line-bottom").classList.toggle("pressed");
+   }
+   
+   burgerBtn.addEventListener("click", pressBurgerBtn);
+
    let i = 0;
+
+  
+
+
 
    // Background Images On Scroll
    window.addEventListener("scroll", () => {
@@ -203,9 +223,11 @@ function nextPrevBlocks() {
    liElements.forEach((element, index) => {
       element.addEventListener("click", (e) => {
          i = index;
-         //img.src = i === 0 ? "img/home.webp" : i === 1 ? "img/projects.webp" : i === 2 ? "img/tech.webp" : i === 3 ? "img/contact.webp" : "img/home.webp";
-         removeActiveLi()
-         e.target.classList.add("active")
+      
+         //pressBurgerBtn() 
+         
+         removeActiveLi();
+         e.target.classList.add("active");
          blocks.forEach(block => {block.classList.remove("active")});
          blocks[index].classList.add("active");
          imgs.forEach(img => {img.classList.remove("isActive")});
