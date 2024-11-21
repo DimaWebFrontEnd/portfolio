@@ -284,14 +284,18 @@ nav ul {
   list-style-type: none;
   line-height: 3;
 }
-nav ul li {
+nav ul li,
+nav ul li a {
   /* line-height: 3; */
   /* padding: 10px; */
   font-size: 1.2rem;
   cursor: pointer;
   user-select: none;
+  color: white;
+  text-decoration: none;
 }
-nav ul .ul__li.active {
+nav ul .ul__li.active,
+nav ul .ul__li a.active {
   transform: scale(1.5);
   animation: glitch 4s steps(100) infinite;
 }
@@ -470,7 +474,7 @@ nav.active {
   width: 100%;
   max-width: 1030px;
   /* width: fit-content; */
-  /* display: none; */
+  display: none;
   z-index: 3;
 }
 @media screen and (max-width: 1400px) {
@@ -754,8 +758,8 @@ nav.active {
 }
 
 .home.active {
-  /* display: block; */
-  z-index: -3;
+  display: block;
+  /* z-index: -10; */
 }
 
 .pictures {
