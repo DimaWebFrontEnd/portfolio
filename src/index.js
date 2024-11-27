@@ -143,6 +143,7 @@ function nextPrevBlocks() {
    const nextBtn = document.querySelector(".next");
    const prevBtn = document.querySelector(".previous");
    const liElements = document.querySelectorAll("nav li");
+  // const liElementsA = document.querySelectorAll("nav li a");
    /* const img = document.querySelector(".pictures img") */
    const imgs = document.querySelectorAll(".pictures__bg");
    const nav = document.querySelector("nav");
@@ -157,6 +158,11 @@ function nextPrevBlocks() {
       document.querySelector(".header__burger--line-top").classList.toggle("pressed");
       document.querySelector(".header__burger--line-centr").classList.toggle("pressed");
       document.querySelector(".header__burger--line-bottom").classList.toggle("pressed");
+      if (!main.classList.contains("active")) {
+         document.body.style.overflow = "hidden";
+      } else {
+         document.body.style.overflow = "auto";
+      }
    }
    
    burgerBtn.addEventListener("click", pressBurgerBtn);
@@ -230,7 +236,7 @@ function nextPrevBlocks() {
    liElements.forEach((element, index) => {
       element.addEventListener("click", (e) => {
          i = index;
-      
+         //console.log(element)
          //pressBurgerBtn() 
          
          removeActiveLi();

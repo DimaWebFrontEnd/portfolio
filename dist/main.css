@@ -286,9 +286,15 @@ nav {
 nav ul {
   list-style-type: none;
   line-height: 3;
+  /* li, */
+  /* .ul__li.active,
+  .ul__li a.active {
+     transform: scale(1.5);
+     animation: glitch 4s steps(100) infinite;
+  } */
 }
-nav ul li,
-nav ul li a {
+nav ul .ul__li,
+nav ul .ul__li a {
   /* line-height: 3; */
   /* padding: 10px; */
   font-size: 1.2rem;
@@ -297,8 +303,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
-nav ul .ul__li.active,
-nav ul .ul__li a.active {
+nav ul .ul__li.active {
   transform: scale(1.5);
   animation: glitch 4s steps(100) infinite;
 }

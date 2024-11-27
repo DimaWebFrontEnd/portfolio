@@ -20,8 +20,10 @@ nav {
    ul {
       list-style-type: none;
       line-height: 3;
-      li,
-      li a {
+      /* li, */
+      
+      .ul__li,
+      .ul__li a {
          /* line-height: 3; */
          /* padding: 10px; */
          font-size: 1.2rem;
@@ -30,11 +32,17 @@ nav {
          color: white;
          text-decoration: none;
       }
-      .ul__li.active,
+      /* .ul__li.active,
       .ul__li a.active {
          transform: scale(1.5);
          animation: glitch 4s steps(100) infinite;
+      } */
+      .ul__li.active {
+         transform: scale(1.5);
+         animation: glitch 4s steps(100) infinite;
       }
+      
+      
       @keyframes glitch {
          
          0% {
