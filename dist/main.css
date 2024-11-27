@@ -48,6 +48,9 @@ header {
   width: 100%;
   max-width: 1600px;
   padding-inline: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 5;
 }
 
 .header__burger {
@@ -439,6 +442,7 @@ nav ul .ul__li a.active {
 
 nav.active {
   display: block;
+  /* left: 80px; */
 }
 
 @keyframes navbar {
@@ -474,8 +478,11 @@ nav.active {
   width: 100%;
   max-width: 1030px;
   /* width: fit-content; */
-  display: none;
+  /* display: none; */
   /* z-index: 3; */
+  z-index: -10;
+  opacity: 0;
+  /* visibility: hidden; */
 }
 @media screen and (max-width: 1400px) {
   .home {
@@ -758,8 +765,10 @@ nav.active {
 }
 
 .home.active {
-  display: block;
-  /* z-index: -10; */
+  /* display: block; */
+  z-index: 3;
+  opacity: 1;
+  /* visibility: visible; */
 }
 
 .pictures {

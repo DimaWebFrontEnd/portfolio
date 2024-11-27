@@ -152,8 +152,8 @@ function nextPrevBlocks() {
 
    /* || Burger Button */
    function pressBurgerBtn() {
-      nav.classList.toggle("active")
-      main.classList.toggle("active")
+      nav.classList.toggle("active");
+      main.classList.toggle("active");
       document.querySelector(".header__burger--line-top").classList.toggle("pressed");
       document.querySelector(".header__burger--line-centr").classList.toggle("pressed");
       document.querySelector(".header__burger--line-bottom").classList.toggle("pressed");
@@ -174,20 +174,27 @@ function nextPrevBlocks() {
       if (offset < 600) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[0].classList.add("isActive");
-         
+         liElements.forEach(elem => elem.classList.remove("active"));
+         liElements[0].classList.add("active");
+
       }
       if (offset > 600) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[1].classList.add("isActive");
-
+         liElements.forEach(elem => elem.classList.remove("active"));
+         liElements[1].classList.add("active");
       }
       if (offset > 1400) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[2].classList.add("isActive");
+         liElements.forEach(elem => elem.classList.remove("active"));
+         liElements[2].classList.add("active");
       }
       if (offset > 2200) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[3].classList.add("isActive");
+         liElements.forEach(elem => elem.classList.remove("active"));
+         liElements[3].classList.add("active");
       }
     
    })
@@ -247,8 +254,8 @@ function nextPrevBlocks() {
       }
       //img.src = i === 0 ? "img/home.webp" : i === 1 ? "img/projects.webp" : i === 2 ? "img/tech.webp" : i === 3 ? "img/contact.webp" : "img/home.webp";
       blocks.forEach(block => {block.classList.remove("active")});
-      liElements.forEach(elem => elem.classList.remove("active"));
       blocks[i].classList.add("active");
+      liElements.forEach(elem => elem.classList.remove("active"));
       liElements[i].classList.add("active");
       imgs.forEach(img => {img.classList.remove("isActive")});
       imgs[i].classList.add("isActive");

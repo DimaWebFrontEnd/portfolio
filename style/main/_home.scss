@@ -3,8 +3,11 @@
    width: 100%;
    max-width: 1030px;
    /* width: fit-content; */
-   display: none;
+   /* display: none; */
    /* z-index: 3; */
+   z-index: -10;
+   opacity: 0;
+   /* visibility: hidden; */
    @media screen and (max-width: 1400px) {
       max-width: 930px;
    }
@@ -288,7 +291,9 @@
 }
 
 .home.active {
-   display: block;
-   /* z-index: -10; */
+   /* display: block; */
+   z-index: 3;
+   opacity: 1;
+  /* visibility: visible; */
 }
 
