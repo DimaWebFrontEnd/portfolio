@@ -238,7 +238,9 @@ function nextPrevBlocks() {
          i = index;
          //console.log(element)
          //pressBurgerBtn() 
-         
+         if (window.innerWidth <= 800) {
+            pressBurgerBtn()
+         }
          removeActiveLi();
          e.target.classList.add("active");
          blocks.forEach(block => {block.classList.remove("active")});

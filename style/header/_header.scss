@@ -4,8 +4,11 @@ header {
    justify-content: space-between;
    width: 100%;
    max-width: $XXL;
-   padding-inline: 80px;
+   /* padding-inline: 10px; */
    position: fixed;
    top: 0;
    z-index: 5;
+   -webkit-backdrop-filter: blur(1.5rem);
+   backdrop-filter: blur(1.5rem);
+   /* border-bottom: 1px solid white; */
 }
