@@ -196,7 +196,7 @@ function nextPrevBlocks() {
          liElements.forEach(elem => elem.classList.remove("active"));
          liElements[2].classList.add("active");
       }
-      if (offset > 2200) {
+      if (offset > 2000) {
          imgs.forEach(img => {img.classList.remove("isActive")});
          imgs[3].classList.add("isActive");
          liElements.forEach(elem => elem.classList.remove("active"));

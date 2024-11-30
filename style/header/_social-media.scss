@@ -5,7 +5,9 @@
    & a {
       & i {
          font-size: 2rem;
+         transition: all 0.3s ease;
       }
+      
       /* background-color: white; */
       /* color: black; */
       /* border-radius: 50%; */
@@ -20,6 +22,9 @@
       position: relative;
    }
 
+   & a:hover i {
+      color: $btn-color;
+   }
    /* & a::after {
       content: "";
       position: absolute;
