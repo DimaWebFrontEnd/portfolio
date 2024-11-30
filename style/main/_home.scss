@@ -94,12 +94,12 @@
          height: 100%;
          /* background-color: black; */
          background-image: radial-gradient(584.01% 313.9% at 136.35% 293.94%, #1D1D1D 0%, rgba(0, 0, 0, 0.10) 0.01%, rgba(29, 29, 29, 0.87) 80.13%);
-         z-index: 2;
+         z-index: 20;
          display: flex;
          justify-content: center;
          align-items: center;
          visibility: hidden;
-
+         padding: 20px;
          .home__description--menu {
             /* display: none; */
             width: 100%;

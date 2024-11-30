@@ -283,7 +283,6 @@ nav {
   position: fixed;
   left: 200px;
   animation: 1s ease navbar;
-  z-index: 5;
 }
 @media screen and (max-width: 1600px) {
   nav {
@@ -305,6 +304,7 @@ nav {
   nav {
     top: 30%;
     left: 80px;
+    /* z-index: 5; */
   }
 }
 nav ul {
@@ -607,11 +607,12 @@ nav.active {
   height: 100%;
   /* background-color: black; */
   background-image: radial-gradient(584.01% 313.9% at 136.35% 293.94%, #1D1D1D 0%, rgba(0, 0, 0, 0.1) 0.01%, rgba(29, 29, 29, 0.87) 80.13%);
-  z-index: 2;
+  z-index: 20;
   display: flex;
   justify-content: center;
   align-items: center;
   visibility: hidden;
+  padding: 20px;
 }
 .home .home__wrap .home__description--contactme .home__description--menu {
   /* display: none; */
@@ -1006,7 +1007,7 @@ nav.active {
 @keyframes projects {
   0% {
     transform: translateY(100%);
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
@@ -1119,6 +1120,45 @@ nav.active {
       z-index: -1;
       margin: -0.1rem;
    } */
+  /*    & .tech__in:nth-child(2) {
+
+        animation-delay: 0.3s;
+     }
+     & .tech__in:nth-child(3) {
+        animation-delay: 0.5s;
+     }
+     & .tech__in:nth-child(4) {
+        animation-delay: 0.7s;
+     }
+     & .tech__in:nth-child(5) {
+        animation-delay: 0.9s;
+     }
+     & .tech__in:nth-child(6) {
+        animation-delay: 1.1s;
+     }
+     & .tech__in:nth-child(7) {
+        animation-delay: 1.3s;
+     }
+     & .tech__in:nth-child(8) {
+        animation-delay: 1.5s;
+     } */
+  /* @keyframes img {
+     0% {
+        transform: scale(1);
+        opacity: 0;
+        transform: translateY(20%);
+     }
+     50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+
+     }
+     100% {
+        transform: scale(1);
+        opacity: 1;
+
+     }
+  } */
 }
 .technologies__wrapp--img .tech__in {
   background: rgba(255, 255, 255, 0.04);
@@ -1128,7 +1168,7 @@ nav.active {
   width: calc((100% - 40px) / 4);
   height: 150px;
   border-radius: 15px;
-  animation: img 0.6s 0.1s ease-in-out;
+  animation: img 0.5s ease-in-out;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1214,7 +1254,7 @@ nav.active {
   height: 150px;
   margin: 10px;
   border-radius: 15px;
-  animation: img 0.6s 0.1s ease-in-out;
+  animation: img 0.5s ease;
 }
 @media screen and (max-width: 800px) {
   .technologies__wrapp--img img {
@@ -1230,39 +1270,13 @@ nav.active {
     aspect-ratio: 1/1;
   }
 }
-.technologies__wrapp--img .tech__in:nth-child(2) {
-  animation-delay: 0.3s;
-}
-.technologies__wrapp--img .tech__in:nth-child(3) {
-  animation-delay: 0.5s;
-}
-.technologies__wrapp--img .tech__in:nth-child(4) {
-  animation-delay: 0.7s;
-}
-.technologies__wrapp--img .tech__in:nth-child(5) {
-  animation-delay: 0.9s;
-}
-.technologies__wrapp--img .tech__in:nth-child(6) {
-  animation-delay: 1.1s;
-}
-.technologies__wrapp--img .tech__in:nth-child(7) {
-  animation-delay: 1.3s;
-}
-.technologies__wrapp--img .tech__in:nth-child(8) {
-  animation-delay: 1.5s;
-}
 @keyframes img {
   0% {
-    transform: scale(1);
+    transform: translateY(100%);
     opacity: 0;
-    transform: translateY(20%);
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 0.5;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
     opacity: 1;
   }
 }

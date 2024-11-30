@@ -2,7 +2,7 @@ nav {
    position: fixed;
    left: 200px;
    animation: 1s ease navbar;
-   z-index: 5;
+   
    @media screen and (max-width: 1600px) {
     font-size: 1rem;
     left: 150px;
@@ -16,6 +16,7 @@ nav {
    @media screen and (max-width: 800px) {
         top: 30%;
         left: 80px;
+        /* z-index: 5; */
    }
    ul {
       list-style-type: none;

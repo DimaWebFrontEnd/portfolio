@@ -39,7 +39,7 @@
             width: calc((100% - 40px) / 4);
             height: 150px;
             border-radius: 15px;
-            animation: img 0.6s 0.1s ease-in-out;
+            animation: img 0.5s ease-in-out;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -140,7 +140,7 @@
             height: 150px;
             margin: 10px;
             border-radius: 15px;
-            animation: img 0.6s 0.1s ease-in-out;
+            animation: img 0.5s ease;
            
             @media screen and (max-width: 800px) {
                width: calc((100% - 40px) / 2);
@@ -157,7 +157,7 @@
 
         
 
-         & .tech__in:nth-child(2) {
+      /*    & .tech__in:nth-child(2) {
             
             animation-delay: 0.3s;
          }
@@ -178,8 +178,8 @@
          }
          & .tech__in:nth-child(8) {
             animation-delay: 1.5s;
-         }
-         @keyframes img {
+         } */
+         /* @keyframes img {
             0% {
                transform: scale(1);
                opacity: 0;
@@ -195,7 +195,17 @@
                opacity: 1;
                
             }
-         }
+         } */
+         @keyframes img {
+            0% {
+             transform: translateY(100%);
+             opacity: 0;
+            } 
+            100% {
+             transform: translateY(0);
+             opacity: 1;
+            }
+          }
       }
    }
 }
