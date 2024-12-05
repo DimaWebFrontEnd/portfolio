@@ -512,6 +512,7 @@ nav.active {
   z-index: -10;
   opacity: 0;
   /* visibility: hidden; */
+  scroll-margin-top: 18rem;
 }
 @media screen and (max-width: 1400px) {
   .home {
@@ -935,6 +936,7 @@ nav.active {
 
 .projects {
   /* overflow: hidden; */
+  scroll-margin-top: 8rem;
 }
 .projects i {
   /* color: $btn-color; */
@@ -1090,6 +1092,9 @@ nav.active {
   }
 }
 
+/* #technologies {
+   scroll-margin-top: 50%;
+} */
 .technologies {
   overflow: hidden;
 }
