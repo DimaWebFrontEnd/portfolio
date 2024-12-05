@@ -1092,12 +1092,12 @@ nav.active {
   }
 }
 
-#technologies {
-  scroll-margin-top: 180px;
-}
-
+/* #technologies {
+   scroll-margin-top: 180px;
+} */
 .technologies {
   overflow: hidden;
+  /* scroll-margin-top: 180px; */
 }
 @media screen and (max-width: 800px) {
   .technologies {
@@ -1117,7 +1117,7 @@ nav.active {
 }
 @media screen and (max-width: 800px) {
   .technologies__wrapp h1 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 .technologies__wrapp h1.show {
