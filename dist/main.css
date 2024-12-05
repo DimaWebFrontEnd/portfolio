@@ -1092,9 +1092,10 @@ nav.active {
   }
 }
 
-/* #technologies {
-   scroll-margin-top: 50%;
-} */
+#technologies {
+  scroll-margin-top: 180px;
+}
+
 .technologies {
   overflow: hidden;
 }
