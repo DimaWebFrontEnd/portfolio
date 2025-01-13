@@ -288,7 +288,14 @@ function nextPrevBlocks() {
    nextBtn.addEventListener("click", nextBlock)
    prevBtn.addEventListener("click", prevBlock)
 
-  
+   /* Date */
+   function date() {
+      let date = new Date().getFullYear();
+      let year = document.querySelector(".year");
+      year.setAttribute("datetime", date)
+      year.textContent = date;
+   } 
+   date();
 
 }
 
